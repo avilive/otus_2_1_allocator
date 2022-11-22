@@ -1,8 +1,13 @@
-﻿include(FetchContent)
-FetchContent_Declare(gtest
-  QUIET
-  URL https://github.com/google/googletest/archive/release-1.10.0.tar.gz
+﻿
+
+include(FetchContent)
+#set(CMAKE_POLICY_DEFAULT_CMP0135 OLD)
+FetchContent_Declare(
+  gtest
+  GIT_REPOSITORY https://github.com/google/googletest.git
+  GIT_TAG        703bd9caab50b139428cea1aaff9974ebee5742e # release-1.10.0
 )
+
 # configure build of googletest
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)

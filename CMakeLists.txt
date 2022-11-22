@@ -14,7 +14,6 @@ add_subdirectory(libs)
 add_subdirectory (main)
 add_subdirectory (test)
 
-
 set(CPACK_GENERATOR DEB)
 
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
