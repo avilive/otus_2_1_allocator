@@ -24,4 +24,6 @@ set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 #)
 add_subdirectory(test_customContainer)
 
+#not ready yet
+#add_subdirectory(test_limitedAllocator)
 

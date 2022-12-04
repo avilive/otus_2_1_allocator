@@ -1,21 +1,24 @@
 
-enable_testing()
-file(GLOB SRCS *.cpp)
-ADD_EXECUTABLE(test_ip_filter ${SRCS})
+project(test_limitedAllocator)
 
-#add_executable(
-#  hello_test
-#  hello_test.cc
-#)
-add_library(${PROJECT_NAME} test_ip_filter.cpp)
-add_library(sub::test ALIAS ${PROJECT_NAME})
+add_executable(
+    unit_test_limitedAllocator
+    test_limitedAllocator.cpp
+    )
 
-TARGET_LINK_LIBRARIES(test_ip_filter
+target_link_libraries(unit_test_limitedAllocator PRIVATE
   #  sub::lib1
-  # sub::test
-    libgtest
-    libgmock
+    limitedAllocator
+    gtest_main
 )
 
+#gtest_discover_tests(test_customContainer)
+# automatic discovery of unit tests
 include(GoogleTest)
-gtest_discover_tests(test_ip_filter)
+gtest_discover_tests(unit_test_limitedAllocator
+  PROPERTIES
+    LABELS "unit"
+  DISCOVERY_TIMEOUT  # how long to wait (in seconds) before crashing
+    240
+  )
+

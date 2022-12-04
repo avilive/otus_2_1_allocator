@@ -2,11 +2,11 @@
 project(test_customContainer)
 
 add_executable(
-    unit_tests
+    unit_test_customContainer
     test_customContainer.cpp
     )
 
-target_link_libraries(unit_tests PRIVATE
+target_link_libraries(unit_test_customContainer PRIVATE
   #  sub::lib1
     customContainer
     gtest_main
@@ -15,7 +15,7 @@ target_link_libraries(unit_tests PRIVATE
 #gtest_discover_tests(test_customContainer)
 # automatic discovery of unit tests
 include(GoogleTest)
-gtest_discover_tests(unit_tests
+gtest_discover_tests(unit_test_customContainer 
   PROPERTIES
     LABELS "unit"
   DISCOVERY_TIMEOUT  # how long to wait (in seconds) before crashing
