@@ -1,6 +1,6 @@
 ﻿
-
-include(FetchContent)
+project(gtest_main)
+#include(FetchContent)
 #set(CMAKE_POLICY_DEFAULT_CMP0135 OLD)
 #FetchContent_Declare(
 #  gtest
@@ -9,6 +9,8 @@ include(FetchContent)
 #)
 add_subdirectory(googletest)
 # configure build of googletest
+enable_testing()
+#find_package(GTest REQUIRED)
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 #FetchContent_MakeAvailable(gtest)
