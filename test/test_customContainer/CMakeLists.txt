@@ -1,6 +1,8 @@
 
 project(test_customContainer)
 
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
+
 add_executable(
     unit_test_customContainer
     test_customContainer.cpp
