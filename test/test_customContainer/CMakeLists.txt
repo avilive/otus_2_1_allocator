@@ -6,12 +6,19 @@ add_executable(
     test_customContainer.cpp
     )
 
+  
+
 target_link_libraries(unit_test_customContainer PRIVATE
   #  sub::lib1
     customContainer
     gtest_main
 )
+############
 
+
+#add_library(static3 STATIC test_customContainer.cpp)
+#target_link_libraries(static3 PRIVATE gtest_main)
+############
 #gtest_discover_tests(test_customContainer)
 # automatic discovery of unit tests
 include(GoogleTest)
