@@ -23,9 +23,6 @@ set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 
 set(CPACK_PACKAGE_CONTACT example@example.com)
 
-if (MSVC)
-    set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
-endif()
 
 include(CPack)
 
