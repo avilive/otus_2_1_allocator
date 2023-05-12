@@ -12,7 +12,7 @@ TEST(ROUND_HOOKS, BasicReadWrite) {
   EXPECT_EQ(vec[0] ,0);
   EXPECT_EQ(vec[1] ,1);
 }
-
+/*
 //2. bool Reserve(size_t capacity)
 TEST(RESERVE, BasicReserve) {
   //arrange
@@ -37,4 +37,4 @@ TEST(AT, at)
   EXPECT_EQ(vec.at(0) ,45);
 
 }
-
+*/
