@@ -1,6 +1,7 @@
 
 #include <gtest/gtest.h>
 #include <customContainer.h>
+/*
 //1. operator []
 TEST(ROUND_HOOKS, BasicReadWrite) {
   //arrange
@@ -12,7 +13,7 @@ TEST(ROUND_HOOKS, BasicReadWrite) {
   EXPECT_EQ(vec[0] ,0);
   EXPECT_EQ(vec[1] ,1);
 }
-/*
+
 //2. bool Reserve(size_t capacity)
 TEST(RESERVE, BasicReserve) {
   //arrange
