@@ -12,7 +12,7 @@ enable_testing()
 # Include sub-projects.
 add_subdirectory(libs)
 add_subdirectory (main)
-#add_subdirectory (test)
+add_subdirectory (test)
 
 set(CPACK_GENERATOR DEB)
 
