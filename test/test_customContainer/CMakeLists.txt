@@ -8,10 +8,10 @@ elseif(MinGW)
     set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} /MT")
 endif()
 
-#add_executable(
-#  unit_test_customContainer
-#  test_customContainer.cpp
-# )
+add_executable(
+  unit_test_customContainer
+  test_customContainer.cpp
+ )
 
   
 
