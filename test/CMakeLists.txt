@@ -24,7 +24,7 @@ set(BUILD_GMOCK OFF CACHE BOOL "" FORCE)
 #    sub::lib1
 #    gtest_main
 #)
-#add_subdirectory(test_customContainer)
+add_subdirectory(test_customContainer)
 
 #not ready yet
 #add_subdirectory(test_limitedAllocator)
