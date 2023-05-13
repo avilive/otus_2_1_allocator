@@ -30,11 +30,11 @@ endif()
 # automatic discovery of unit tests
 include(GoogleTest)
 
-#gtest_discover_tests(unit_test_customContainer 
- # PROPERTIES
- #   LABELS "unit"
- # DISCOVERY_TIMEOUT  # how long to wait (in seconds) before crashing
- #   600
- # )
+gtest_discover_tests(unit_test_customContainer 
+  PROPERTIES
+    LABELS "unit"
+  DISCOVERY_TIMEOUT  # how long to wait (in seconds) before crashing
+    600
+  )
  
 
