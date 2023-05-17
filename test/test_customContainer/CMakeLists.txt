@@ -15,11 +15,11 @@ add_executable(
 
   
 
-#target_link_libraries(unit_test_customContainer PRIVATE
+target_link_libraries(unit_test_customContainer PRIVATE
   ##  sub::lib1
-   # customContainer
-   # gtest_main
-#)
+    customContainer
+    gtest_main
+)
 ############
 
 
