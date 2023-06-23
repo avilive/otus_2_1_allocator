@@ -15,11 +15,11 @@ add_executable(
 
   
 
-target_link_libraries(unit_test_customContainer PRIVATE
+#target_link_libraries(unit_test_customContainer PRIVATE
   ##  sub::lib1
-    customContainer
-    gtest_main
-)
+#    customContainer
+#    gtest_main
+#)
 ############
 
 
@@ -34,7 +34,7 @@ gtest_discover_tests(unit_test_customContainer
   PROPERTIES
     LABELS "unit"
   DISCOVERY_TIMEOUT  # how long to wait (in seconds) before crashing
-    2400
+    600
   )
  
 
